@@ -53,7 +53,8 @@
     "test:coverage": "vitest run --coverage",
     "test:coverage:serve": "vitest run --coverage; serve coverage",
     "docs:build": "typedoc src/index.ts",
-    "docs:serve": "typedoc src/index.ts; serve docs"
+    "docs:serve": "typedoc src/index.ts; serve docs",
+    "release": "auto shipit"
   },
   "auto": {
     "plugins": [
