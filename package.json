@@ -1,0 +1,45 @@
+{
+    "name": "@lloydjatkinson/date-fns-additional",
+    "description": "Additional functionality built on date-fns",
+    "author": "Lloyd Atkinson",
+    "license": "MIT",
+    "version": "0.0.1",
+    "keywords": [
+        "date-fns",
+        "date",
+        "date-formatting"
+    ],
+    "homepage": "https://github.com/lloydjatkinson/date-fns-additional#readme",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lloydjatkinson/date-fns-additional.git"
+    },
+    "bugs": {
+        "url": "https://github.com/lloydjatkinson/date-fns-additional/issues"
+    },
+    "type": "module",
+    "module": "./dist/index.js",
+    "main": "./dist/index.js",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/index.js",
+            "default": "./dist/index.js"
+        },
+        "./package.json": "./package.json"
+    },
+    "devDependencies": {
+        "serve": "^14.1.2",
+        "typedoc": "^0.23.24",
+        "typescript": "^4.9.4"
+    },
+    "peerDependencies": {
+        "date-fns": "^2.29.3"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build": "tsc",
+        "docs": "typedoc src/index.ts",
+        "docs:serve": "typedoc src/index.ts ; serve docs"
+    }
+}

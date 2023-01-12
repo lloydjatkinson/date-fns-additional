@@ -1,0 +1,15 @@
+{
+    "$schema": "https://typedoc.org/schema.json",
+    "entryPoints": ["./src"],
+    "sort": ["source-order"],
+    "media": "media",
+
+    "navigationLinks": {
+        "Author": "https://www.lloydatkinson.net",
+        "Docs": "https://github.com/lloydjatkinson/date-fns-additional",
+        "GitHub": "https://github.com/lloydjatkinson/date-fns-additional"
+    },
+    "sidebarLinks": {
+        "date-fns": "https://date-fns.org/"
+    }
+}
