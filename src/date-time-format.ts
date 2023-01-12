@@ -85,7 +85,7 @@ export const formatAsDateMonthYearAndTwelveHourTimeWithPeriod = (date: Date): st
 export const formatAsIsoDate = (date: Date): string => formatUsingPattern(date, 'yyyy-MM-dd');
 
 /**
- * Formats a Date into "relative date" that is specific to the notification queue. For example, a date that is today would be formatted as "Today".
+ * Formats a Date into "relative date". For example, a date that is today would be formatted as "Today".
  * @example
  * formatAsRelativeDate(new Date(2020, 10, 21), new Date(2020, 10, 21)) // Today
  * formatAsRelativeDate(new Date(2020, 10, 20), new Date(2020, 10, 21)) // Yesterday

@@ -29,17 +29,22 @@
         "./package.json": "./package.json"
     },
     "devDependencies": {
+        "@vitest/ui": "^0.27.1",
         "serve": "^14.1.2",
         "typedoc": "^0.23.24",
-        "typescript": "^4.9.4"
+        "typescript": "^4.9.4",
+        "vitest": "^0.27.1"
     },
     "peerDependencies": {
         "date-fns": "^2.29.3"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc",
-        "docs": "typedoc src/index.ts",
-        "docs:serve": "typedoc src/index.ts --watch ; serve docs"
+        "test": "vitest",
+        "test:ui": "vitest --ui",
+        "test:types": "vitest typecheck",
+        "test:coverage": "vitest run --coverage",
+        "docs:build": "typedoc src/index.ts",
+        "docs:serve": "typedoc src/index.ts; serve docs"
     }
 }
