@@ -29,7 +29,10 @@
         "./package.json": "./package.json"
     },
     "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.48.1",
+        "@typescript-eslint/parser": "^5.48.1",
         "@vitest/ui": "^0.27.1",
+        "eslint": "^8.31.0",
         "serve": "^14.1.2",
         "typedoc": "^0.23.24",
         "typescript": "^4.9.4",
@@ -40,6 +43,8 @@
     },
     "scripts": {
         "build": "tsc",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
         "test": "vitest",
         "test:ui": "vitest --ui",
         "test:types": "vitest typecheck",
