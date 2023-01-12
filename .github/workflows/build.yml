@@ -50,6 +50,9 @@ jobs:
         with:
           node-version: 19.x
 
+      - run: npm ci
+        name: Install Packages
+
       - name: Create Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
