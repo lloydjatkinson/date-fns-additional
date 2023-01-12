@@ -40,6 +40,6 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "build": "tsc",
         "docs": "typedoc src/index.ts",
-        "docs:serve": "typedoc src/index.ts ; serve docs"
+        "docs:serve": "typedoc src/index.ts --watch ; serve docs"
     }
 }
