@@ -10,4 +10,8 @@ describe('date time formatting', () => {
     it('should have coverage setup', () => {
         formatAsTwelveHourTime(new Date());
     });
+
+    it('should trigger new release', () => {
+        expect(true);
+    });
 });
