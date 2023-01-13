@@ -67,6 +67,6 @@
       "first-time-contributor",
       "released"
     ],
-    "onlyPublishWithReleaseLabel": true
+    "onlyPublishWithReleaseLabel": false
   }
 }
