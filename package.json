@@ -29,14 +29,10 @@
     "./package.json": "./package.json"
   },
   "devDependencies": {
-    "@auto-it/all-contributors": "^10.37.6",
-    "@auto-it/conventional-commits": "^10.37.6",
-    "@auto-it/first-time-contributor": "^10.37.6",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
     "@vitest/coverage-c8": "^0.27.1",
     "@vitest/ui": "^0.27.1",
-    "auto": "^10.37.6",
     "eslint": "^8.31.0",
     "serve": "^14.1.2",
     "typedoc": "^0.23.24",
@@ -57,16 +53,6 @@
     "test:coverage:serve": "vitest run --coverage; serve coverage",
     "docs:build": "typedoc src/index.ts",
     "docs:serve": "typedoc src/index.ts; serve docs",
-    "release": "auto shipit"
-  },
-  "auto": {
-    "plugins": [
-      "npm",
-      "all-contributors",
-      "conventional-commits",
-      "first-time-contributor",
-      "released"
-    ],
-    "onlyPublishWithReleaseLabel": true
+    "release": ""
   }
 }
