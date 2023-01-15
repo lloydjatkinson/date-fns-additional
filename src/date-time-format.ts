@@ -1,6 +1,4 @@
-import {
-    format, isSameDay, subDays, 
-} from 'date-fns';
+import { format, isSameDay, subDays } from 'date-fns';
 
 /**
  * Human friendly date time format names.

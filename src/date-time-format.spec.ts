@@ -11,7 +11,7 @@ import {
     formatAsMonthNameWithDayNumber,
     formatAsMonthNameWithOrdinalDate,
     formatAsDateMonthYearAndTwelveHourTimeWithPeriod,
-    formatAsIsoDate, 
+    formatAsIsoDate,
 } from './date-time-format';
 
 describe('date time formatting', () => {
