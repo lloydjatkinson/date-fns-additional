@@ -27,7 +27,7 @@ module.exports = {
         '@typescript-eslint',
     ],
     'rules': {
-        // Readability/Stylistic
+        // Stylistic/Readability rules
         'indent': [
             'error',
             4,
@@ -53,11 +53,31 @@ module.exports = {
         '@typescript-eslint/space-before-blocks': 'warn',
         'space-before-function-paren': 'off',
         '@typescript-eslint/space-before-function-paren': 'warn',
-
+    
+        // Variable and function related rules
+        'no-shadow': 'off',
+        '@typescript-eslint/no-shadow': 'warn',
+        'no-use-before-define': 'off',
+        '@typescript-eslint/no-use-before-define': 'error',
+        'no-magic-numbers': 'off',
+        '@typescript-eslint/no-magic-numbers': [
+            'error',
+            { 'ignoreNumericLiteralTypes': true, 'ignoreEnums': true },
+        ],
+        'no-unused-vars': 'off',
+        '@typescript-eslint/no-unused-vars': 'warn',
+        '@typescript-eslint/switch-exhaustiveness-check': 'error',
+        '@typescript-eslint/promise-function-async': 'error',
+        '@typescript-eslint/prefer-string-starts-ends-with': 'error',
+        '@typescript-eslint/prefer-nullish-coalescing': 'warn',
+        '@typescript-eslint/prefer-reduce-type-parameter': 'error',
+        '@typescript-eslint/prefer-includes': 'error',
+        '@typescript-eslint/restrict-plus-operands': 'error',
+        '@typescript-eslint/sort-type-constituents': 'warn',
+    
         // Naming conventions
         'camelcase': 'off',
         '@typescript-eslint/naming-convention': [
-            'error',
             {
                 'selector': 'default',
                 'format': ['camelCase'],
@@ -87,43 +107,19 @@ module.exports = {
                     'objectLiteralProperty',
                     'typeProperty',
                     'classMethod',
-                    'objectLiteralMethod',
-                    'typeMethod',
-                    'accessor',
-                    'enumMember',
+                    'objectLiteralMethod'
                 ],
-                'format': null,
-                'modifiers': ['requiresQuotes'],
-            },
+                'format': ['camelCase'],
+                'leadingUnderscore': 'forbid'
+            }
         ],
-
-        // Values, expressions, types, functions
-        'no-shadow': 'off',
-        '@typescript-eslint/no-shadow': 'warn',
-        'no-use-before-define': 'off',
-        '@typescript-eslint/no-use-before-define': 'error',
-        'no-magic-numbers': 'off',
-        '@typescript-eslint/no-magic-numbers': [
-            'error',
-            { 'ignoreNumericLiteralTypes': true, 'ignoreEnums': true },
-        ],
-        'no-unused-vars': 'off',
-        '@typescript-eslint/no-unused-vars': 'warn',
-        '@typescript-eslint/switch-exhaustiveness-check': 'error',
-        '@typescript-eslint/promise-function-async': 'error',
-        '@typescript-eslint/prefer-string-starts-ends-with': 'error',
-        '@typescript-eslint/prefer-nullish-coalescing': 'error',
-        '@typescript-eslint/prefer-reduce-type-parameter': 'error',
-        '@typescript-eslint/prefer-includes': 'error',
-        '@typescript-eslint/restrict-plus-operands': 'error',
-        '@typescript-eslint/sort-type-constituents': 'error',
+        
+        // Imports and exports
+        'no-duplicate-imports': 'error',
+        '@typescript-eslint/consistent-type-imports': 'error',
         '@typescript-eslint/type-annotation-spacing': [
             'error',
             { 'before': false, 'after': true },
         ],
-
-        // Imports and exports
-        'no-duplicate-imports': 'error',
-        '@typescript-eslint/consistent-type-imports': 'error',
-    },
+    }            
 };

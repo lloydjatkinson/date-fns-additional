@@ -1,29 +1,18 @@
-import { format, isSameDay, subDays } from 'date-fns';
+import {
+    format, isSameDay, subDays, 
+} from 'date-fns';
 
 /**
  * Human friendly date time format names.
  */
 export type FormatName =
-    | 'twelve-hour-time'
-    | 'twelve-hour-time-with-period'
-    | 'twenty-four-hour-time'
-    | 'month-name-with-day-number'
-    | 'month-name-with-ordinal-date'
-    | 'date-month-year-and-twelve-hour-time-with-period'
-    | 'date-year-month-date'
-    | 'relative';
+    'date-month-year-and-twelve-hour-time-with-period' | 'date-year-month-date' | 'month-name-with-day-number' | 'month-name-with-ordinal-date' | 'relative' | 'twelve-hour-time-with-period' | 'twelve-hour-time' | 'twenty-four-hour-time';
 
 /**
  * Format specifiers for designated format names.
  */
 export type FormatPattern =
-    | 'h:mm'
-    | 'h:mm a'
-    | 'HH:mm'
-    | 'LLLL d'
-    | 'PPP'
-    | 'dd/MM/yyyy - hh:mm a'
-    | 'yyyy-MM-dd';
+    'dd/MM/yyyy - hh:mm a' | 'h:mm a' | 'h:mm' | 'HH:mm' | 'LLLL d' | 'PPP' | 'yyyy-MM-dd';
 
 /**
  * Formats a Date using the specified {@link FormatPattern}. Note the similarity to the {@link formatUsingPattern} function.
@@ -99,7 +88,8 @@ export const formatAsRelativeDate = (date: Date, baseDate: Date) => {
         return 'Today';
     }
 
-    const yesterday = subDays(baseDate, 1);
+    const daysAgo = 1;
+    const yesterday = subDays(baseDate, daysAgo);
     if (isSameDay(date, yesterday)) {
         return 'Yesterday';
     }

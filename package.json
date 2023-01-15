@@ -44,8 +44,8 @@
   },
   "scripts": {
     "build": "tsc",
-    "lint": "eslint . --ext .ts",
-    "lint:fix": "eslint . --ext .ts --fix",
+    "lint": "eslint . --ext .ts,.cjs,.mjs",
+    "lint:fix": "eslint . --ext .ts,.cjs,.mjs --fix",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:types": "vitest typecheck",
