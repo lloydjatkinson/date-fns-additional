@@ -1,5 +1,11 @@
 # @lloydjatkinson/date-fns-additional
 
+## 0.0.5
+
+### Patch Changes
+
+- [`e86ef4a`](https://github.com/lloydjatkinson/date-fns-additional/commit/e86ef4a8233253b800e8268bc5b7ee59f6db9098) Thanks [@lloydjatkinson](https://github.com/lloydjatkinson)! - Add .js file extension to import inside index.ts for npm reasons
+
 ## 0.0.4
 
 ### Patch Changes
