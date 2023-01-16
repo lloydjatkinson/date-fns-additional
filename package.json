@@ -54,6 +54,6 @@
     "test:coverage:serve": "vitest run --coverage; serve coverage",
     "docs:build": "typedoc src/index.ts",
     "docs:serve": "typedoc src/index.ts; serve docs",
-    "release": ""
+    "changeset": "changeset"
   }
 }
