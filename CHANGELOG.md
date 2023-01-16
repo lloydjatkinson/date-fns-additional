@@ -1,5 +1,11 @@
 # @lloydjatkinson/date-fns-additional
 
+## 0.0.3
+
+### Patch Changes
+
+- [`709b529`](https://github.com/lloydjatkinson/date-fns-additional/commit/709b5290c7145c84eb4bae5035404ae2c8d964fd) Thanks [@lloydjatkinson](https://github.com/lloydjatkinson)! - Tweak package.json for npm package publish
+
 ## 0.0.2
 
 ### Patch Changes
