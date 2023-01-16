@@ -1,5 +1,11 @@
 # @lloydjatkinson/date-fns-additional
 
+## 0.0.4
+
+### Patch Changes
+
+- [`0e32e3e`](https://github.com/lloydjatkinson/date-fns-additional/commit/0e32e3e343e5262a5428a2157d856d1420476cde) Thanks [@lloydjatkinson](https://github.com/lloydjatkinson)! - Add build step to release
+
 ## 0.0.3
 
 ### Patch Changes
