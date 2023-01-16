@@ -3,7 +3,7 @@
   "description": "Additional functionality built on date-fns",
   "author": "Lloyd Atkinson",
   "license": "MIT",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "keywords": [
     "date-fns",
     "date",
