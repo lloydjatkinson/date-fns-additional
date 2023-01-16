@@ -1,5 +1,11 @@
 # @lloydjatkinson/date-fns-additional
 
+## 0.0.2
+
+### Patch Changes
+
+- [`8b445cd`](https://github.com/lloydjatkinson/date-fns-additional/commit/8b445cdfe2d54a4db79e5bd9358761075c924fa3) Thanks [@lloydjatkinson](https://github.com/lloydjatkinson)! - Add dist to npm package
+
 ## 0.0.1
 
 ### Patch Changes
