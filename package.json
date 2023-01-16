@@ -33,6 +33,7 @@
     "/dist"
   ],
   "devDependencies": {
+    "@changesets/changelog-github": "^0.4.8",
     "@changesets/cli": "^2.26.0",
     "@typescript-eslint/eslint-plugin": "^5.48.1",
     "@typescript-eslint/parser": "^5.48.1",
@@ -60,8 +61,5 @@
     "docs:build": "typedoc src/index.ts",
     "docs:serve": "typedoc src/index.ts; serve docs",
     "changeset": "changeset"
-  },
-  "dependencies": {
-    "@changesets/changelog-github": "^0.4.8"
   }
 }
