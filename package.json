@@ -18,6 +18,7 @@
     "url": "https://github.com/lloydjatkinson/date-fns-additional/issues"
   },
   "type": "module",
+  "types": "./dist/index.d.ts",
   "module": "./dist/index.js",
   "main": "./dist/index.js",
   "exports": {
@@ -29,7 +30,7 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "dist"
+    "/dist"
   ],
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
