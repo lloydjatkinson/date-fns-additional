@@ -55,6 +55,9 @@ jobs:
       - run: npm ci
         name: Install Packages
 
+      - run: npm run build
+        name: Build
+
       - name: Create Release Pull Request or Publish to NPM
         id: changesets
         uses: changesets/action@v1
