@@ -1,5 +1,11 @@
 # @lloydjatkinson/date-fns-additional
 
+## 0.0.6
+
+### Patch Changes
+
+- [`f0a5945`](https://github.com/lloydjatkinson/date-fns-additional/commit/f0a5945fccbd0b21b06f3b6c0e4c601fa419afbc) Thanks [@lloydjatkinson](https://github.com/lloydjatkinson)! - Configure package.json files property
+
 ## 0.0.5
 
 ### Patch Changes
