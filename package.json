@@ -30,7 +30,9 @@
     "./package.json": "./package.json"
   },
   "files": [
-    "/dist"
+    "/dist/**/*.d.ts",
+    "/dist/**/*.js",
+    "!/dist/**/*.spec.*"
   ],
   "devDependencies": {
     "@changesets/changelog-github": "^0.4.8",
