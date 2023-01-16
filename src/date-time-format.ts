@@ -2,15 +2,36 @@ import { format, isSameDay, subDays } from 'date-fns';
 
 /**
  * Human friendly date time format names.
+ * 
+ * @see {@link FormatPattern}
+ * 
+ * @remarks
+ * The `relative` format is under review. Currently, it has simple Today/Yesterday/(date) logic.
+ * This functionality is probably either too limited or should be under a different name and built on
+ * more generic logic.
  */
 export type FormatName =
-    'date-month-year-and-twelve-hour-time-with-period' | 'date-year-month-date' | 'month-name-with-day-number' | 'month-name-with-ordinal-date' | 'relative' | 'twelve-hour-time-with-period' | 'twelve-hour-time' | 'twenty-four-hour-time';
+    | 'date-month-year-and-twelve-hour-time-with-period'
+    | 'date-year-month-date'
+    | 'month-name-with-day-number'
+    | 'month-name-with-ordinal-date'
+    | 'relative'
+    | 'twelve-hour-time-with-period'
+    | 'twelve-hour-time'
+    | 'twenty-four-hour-time';
 
 /**
  * Format specifiers for designated format names.
+ * @see {@link FormatName}
  */
 export type FormatPattern =
-    'dd/MM/yyyy - hh:mm a' | 'h:mm a' | 'h:mm' | 'HH:mm' | 'LLLL d' | 'PPP' | 'yyyy-MM-dd';
+    | 'dd/MM/yyyy - hh:mm a'
+    | 'h:mm a'
+    | 'h:mm'
+    | 'HH:mm'
+    | 'LLLL d'
+    | 'PPP'
+    | 'yyyy-MM-dd';
 
 /**
  * Formats a Date using the specified {@link FormatPattern}. Note the similarity to the {@link formatUsingPattern} function.
