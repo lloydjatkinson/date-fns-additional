@@ -97,6 +97,20 @@ export const formatAsDateMonthYearAndTwelveHourTimeWithPeriod = (date: Date): st
 export const formatAsIsoDate = (date: Date): string => formatUsingPattern(date, 'yyyy-MM-dd');
 
 /**
+ * Formats a Date into "year". For example, 2023.
+ * @param { Date } date The date.
+ * @returns { string } The formatted string.
+ */
+export const formatAsYear = (date: Date): string => formatUsingPattern(date, 'yyyy');
+
+/**
+ * Formats a Date into "year". For example, 2023.
+ * @param { Date } date The date.
+ * @returns { string } The formatted string.
+ */
+export const formatAsMonthWithYear = (date: Date): string => formatUsingPattern(date, 'MMMM yyyy');
+
+/**
  * Formats a Date into "relative date". For example, a date that is today would be formatted as "Today".
  * @example
  * formatAsRelativeDate(new Date(2020, 10, 21), new Date(2020, 10, 21)) // Today
