@@ -15,10 +15,12 @@ export type FormatName =
     | 'date-year-month-date'
     | 'month-name-with-day-number'
     | 'month-name-with-ordinal-date'
+    | 'month-with-year'
     | 'relative'
     | 'twelve-hour-time-with-period'
     | 'twelve-hour-time'
-    | 'twenty-four-hour-time';
+    | 'twenty-four-hour-time'
+    | 'year';
 
 /**
  * Format specifiers for designated format names.
@@ -30,8 +32,10 @@ export type FormatPattern =
     | 'h:mm'
     | 'HH:mm'
     | 'LLLL d'
+    | 'MMMM yyyy'
     | 'PPP'
-    | 'yyyy-MM-dd';
+    | 'yyyy-MM-dd'
+    | 'yyyy';
 
 /**
  * Formats a Date using the specified {@link FormatPattern}. Note the similarity to the {@link formatUsingPattern} function.
@@ -132,8 +136,10 @@ export const formatUsingName = (date: Date, formatName: FormatName): string => {
         'twenty-four-hour-time': 'HH:mm',
         'month-name-with-day-number': 'LLLL d',
         'month-name-with-ordinal-date': 'PPP',
+        'month-with-year': 'MMMM yyyy',
         'date-month-year-and-twelve-hour-time-with-period': 'dd/MM/yyyy - hh:mm a',
         'date-year-month-date': 'yyyy-MM-dd',
+        'year': 'yyyy',
     } as const;
 
     if (formatName === 'relative') {
