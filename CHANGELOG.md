@@ -1,5 +1,11 @@
 # @lloydjatkinson/date-fns-additional
 
+## 0.0.8
+
+### Patch Changes
+
+- [`aec91d5`](https://github.com/lloydjatkinson/date-fns-additional/commit/aec91d52cde6cc87dfff49c78cab4c22b6ec6e3a) Thanks [@lloydjatkinson](https://github.com/lloydjatkinson)! - Add functions for new formats
+
 ## 0.0.7
 
 ### Patch Changes
